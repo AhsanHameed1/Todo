@@ -15,6 +15,7 @@ jobs:
       with:
         node-version: '16'
     - run: npm install
+    - run: sudo chmod -R 755 node_modules/.bin/  # Ensure correct permissions
     - run: npm test
 
   dockerize:
