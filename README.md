@@ -28,20 +28,10 @@ cd <repository-folder>
 npm install
 ```
 
-### 3. Setup Environment Variables
-Create a `.env` file in the root directory and add the following:
-```env
-DB_NAME=<yourdbname>
-DB_USER=<your-mysql-username>
-DB_PASSWORD=<your-mysql-password>
-DB_HOST=<localhost  or your host url for a hosted database>
-PORT=3307
-```
+### 3. Run MySQL Locally or Use Docker for Cloud DB
 
-### 4. Run MySQL Locally
-Ensure a MySQL instance is running and the credentials match the `.env` file.
 
-### 5. Start the Server
+### 4. Start the Server
 ```bash
 npm start
 ```
@@ -138,7 +128,4 @@ http://localhost:3307
 ---
 
 ## Notes
-
-- Replace `<repository-url>` with the URL of your GitHub repository.
-- Ensure the MySQL database is properly set up and accessible before running the application.
 - Use Postman or curl to test API endpoints.
