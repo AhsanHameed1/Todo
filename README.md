@@ -18,39 +18,39 @@ This repository contains the backend service for a Todo application. The service
 ## Running the Application Locally
 
 ### 1. Clone the Repository
-```bash
+
 git clone <repository-url>
 cd <repository-folder>
-```
+
 
 ### 2. Install Dependencies
-```bash
+
 npm install
-```
 
 ### 3. Run MySQL Locally or Use Docker for Cloud DB
 
 
 ### 4. Start the Server
-```bash
+
 npm start
-```
+
 
 The application will be available at `http://localhost:3307`.
+IT can be tested using Postman (Explained Below) in the section (## Using the API Endpoints)
 
 ---
 
 ## Running the Application with Docker
 
 ### 1. Build the Docker Image
-```bash
+
 docker build -t todo-app .
-```
+
 
 ### 2. Run the Docker Container
-```bash
+
 docker run -p 3307:3307 --env-file .env todo-app
-```
+
 
 The application will be available at `http://localhost:3307`.
 
@@ -62,9 +62,8 @@ The application will be available at `http://localhost:3307`.
 Ensure a MySQL instance is running and the test database credentials match `.env`.
 
 ### 2. Run Tests
-```bash
+
 npm test
-```
 
 ---
 
@@ -129,3 +128,4 @@ http://localhost:3307
 
 ## Notes
 - Use Postman or curl to test API endpoints.
+
